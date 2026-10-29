@@ -1,139 +1,82 @@
-<<<<<<< HEAD
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div class="brand">
-        <span>KasirKu</span>
-        <span>Toko Berkah Warung - Buka</span>
-      </div>
-      <nav class="main-nav">
-        <a href="">Kasir Transaksi</a>
-        <a href="">Daftar Produk</a>
-        <a href="" class="active">Tambah Produk</a>
-      </nav>
-      <div class="nav-user">
-        <div class="user-profile">
-          <img src="https://.jpg" class="user-avatar" alt="" />
-          <div>
-            <strong>Mas Amba (Kasir)</strong>
-            <small style="color: #262726;">Admin & Kasir</small>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="page-header">
-        <div class="sub-breadcrumb">
-          <div>Daftar Produk / TAMBAH PRODUK BARU</div>
-          <h1>Formulir Tambah Produk Warung</h1>
-          <p style="color: #262726;">
-            Lengkapi data barang dengan teliti, agar margin keuntungan terhitung
-            akurat.
-          </p>
-        </div>
-      </div>
+const daftarProduk = [
+{
+  nama: "Minyak Goreng",
+  harga: 42000,
+  stock: 46,
+   },
+{
+  nama: "Beras",
+  harga: 15000,
+  stock: 50,
+  },
+ {
+ nama: "Gulaku",
+ harga: 18000,
+ stock: 36,
+  },
+];
 
-      <div class="grid-2col">
-        <form action="" method="post">
-          <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid #f8f3f3; margin-bottom: 20px;">
-            <h3 style="margin-bottom: 16px;">1.Informasi Pokok Barang</h3>
-            <div>
-              <label for="nama_product">Nama Produk Warung</label>
-              <input type="text" id="nama_product" />
-            </div>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
-              <div>
-                <label for="kategori_product">Kategori Produk</label>
-                <select name="" id="kategori_product">
-                  <option value="">Sembako (Minyak, Beras, Gula)</option>
-                </select>
-              </div>
-              <div>
-                <label for="satuan_eceran">Satuan Eceran</label>
-                <input type="text" id="satuan_eceran" />
-              </div>
-            </div>
-            <div>
-              <label for="">Kode Barang /SKU (Opsional)</label>
-              <input type="text" />
-            </div>
-          </div>
 
-          <!-- SESI KE 2 -->
-          <div style ="background: white; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
-            <h3 style="margin-bottom: 16px;">2.Harga dan Margin Laba</h3>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-              <div>
-                <label for="">Harga Modal / Beli (Rp)</label>
-                <input type="number" />
-              </div>
-              <div>
-                <label for="">Harga Jual Kasir (Rp)</label>
-                <input type="number" />
-              </div>
-            </div>
-            <div>
-              <div></div>
-              <div>
-                <label for="">Satuan Eceran</label>
-                <input type="text" />
-              </div>
-            </div>
-            <div>
-              <label for="">Kode Barang /SKU (Opsional)</label>
-              <input type="text" />
-            </div>
-          </div>
-          <!-- SESI KE 3 -->
-          <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
-            <h3 style="margin-bottom: 16px;">3.Manajemen Stock & Peringatan</h3>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-              <div>
-                <label for="">Jumlah Stock Awal Saat ini</label>
-                <input type="number" />
-              </div>
-              <div>
-                <label for="">Batas Minimum Stock</label>
-                <input type="number" />
-              </div>
-            </div>
-          </div>
-          <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 16px;">
-            <button type="submit" class="btn-secondary">Batal</button>
-            <button type="submit" class="btn-primary">Simpan</button>
-          </div>
-        </form>
+console.log(daftarProduk);
 
-        <div>
-          <div style="background: white; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0;">
-            <h3 style="margin-bottom: 12px;">Pratinjau Live Kartu Kasir</h3>
-            <div style= "margin-bottom:16px;" class="product-card">
-              <span>Stock: 34 Botol</span>
-              <img src="https://i.pinimg.com/736x/c2/53/b3/c253b34e44dc2b55327fbfa679f6960b.jpg" alt="" />
-              <div class="product-card-body">
-                <small>Sembako</small>
-                <div style="font-weight: 700; font-size: 16px;">Minyak Goreng Sania 2 Liter</div>
-                <div style="font-weight: 800; font-size: 16px; margin-top: 8px;">Rp. 37.000</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>Kasirku POS Warung &copy; (Kilat Retail UMKM)</div>
-    </footer>
-  </body>
-</html>
-=======
-//helow.js
-const namma = Process.argv[2] || "Tamu";
-console.log('Halo, ${Nama}');
->>>>>>> 5da9bd51ce1e6c366782073364a0e9b1a7a343d1
+
+// if : menghitung discound
+//const = totalBelanja = 120000;
+function menghitungDiscound(totalBelanja) {
+  let discound = 0;
+  if (totalBelanja >= 100000) {
+  discound = totalBelanja * 0.1;
+ } else if (totalBelanja >= 50000) {
+  discound = totalBelanja * 0.05;
+ } else {
+  discound = 0;
+ }
+  return discound;
+}
+
+
+console.log(
+ `Harga Beli 130.000 dapat discound : ${menghitungDiscound(130000)}`,
+);
+console.log(`Harga Beli 75.000 dapat discound : ${menghitungDiscound(75000)}`);
+// switch : nyari tau metode pembayaran
+//let metodeBayar = "qris";
+function metodeBayar(metode) {
+  let biayaAdmin = 0;
+ switch (metode) {
+ case "cash":
+ biayaAdmin = 0;
+ break;
+ case "transfer":
+ biayaAdmin = 3000;
+ break;
+ case "qris":
+ biayaAdmin = 2500;
+ break;
+ default:
+ biayaAdmin = "Biaya admin tidak di temukan";
+ }
+ return biayaAdmin;
+}
+//console.log(`Metode Bayar ${metodeBayar}, biaya admin adalah ${biayaAdmin}`);
+console.log(
+ `Biaya Admin ${metodeBayar("cash")} dengan metode bayar adalah cash`,
+);
+console.log(
+ `Biaya Admin ${metodeBayar("transfer")} dengan metode bayar adalah transfer`,
+);
+console.log(
+ `Biaya Admin ${metodeBayar("qris")} dengan metode bayar adalah qris`,
+);
+console.log(
+ `Biaya Admin ${metodeBayar("not found")} dengan metode bayar adalah not found"`,
+);
+// for..of:hitung satu total
+let totalHarga = 0;
+for (const produk of daftarProduk) {
+totalHarga += produk.harga * produk.stock;
+totalHarga += produk.harga * produk.stock;
+}
+
+
+console.log(totalHarga);
